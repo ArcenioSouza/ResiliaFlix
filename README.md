@@ -4,21 +4,21 @@ Esse projeto consiste em um site baseado no modelo de sites de streaming como Ne
 
 # Objetivos
 
-- [] Construir um site criativo baseado em streamings;
+- [ ] Construir um site criativo baseado em streamings;
 
-- [] Consumir a API da OMDb para buscar informações de filmes;
+- [ ] Consumir a API da OMDb para buscar informações de filmes;
 
-- [] Consumir a API da viaCep para preenchimento de formulário;
+- [ ] Consumir a API da viaCep para preenchimento de formulário;
 
-- [] Criar sistema de busca de filmes por titulo;
+- [ ] Criar sistema de busca de filmes por titulo;
 
-- [] Criar sistema de logIn e recuperação de senha com validação de email e cpf;
+- [ ] Criar sistema de logIn e recuperação de senha com validação de email e cpf;
 
-- [] Criar sistema de cadastro de dados de usuário em um banco de dados de modelo não relacional;
+- [ ] Criar sistema de cadastro de dados de usuário em um banco de dados de modelo não relacional;
 
-- [] Aprender a trabalhar em equipe usando repositório em modelo de colaboração, para praticar as funções git como o git clone, checkout, branch, pull, merge, dentre outros;
+- [ ] Aprender a trabalhar em equipe usando repositório em modelo de colaboração, para praticar as funções git como o git clone, checkout, branch, pull, merge, dentre outros;
 
-- [] Aprender e praticar as requisições de pull request.
+- [ ] Aprender e praticar as requisições de pull request.
 
 # Tecnologias e ferramentas utilizadas
 
@@ -44,34 +44,39 @@ Esse projeto consiste em um site baseado no modelo de sites de streaming como Ne
 
  # Link do site
 
- []()
+ [https://arceniosouza.github.io/ResiliaFlix/](https://arceniosouza.github.io/ResiliaFlix/)
 
  # Colaboradores
-   <br>
+ 
    <div align="center">
-      <img width="215" height="200" src="./img/Arcenio.jpeg"><br>
-      <a href="https://www.linkedin.com/in/arceniofso/"><img width="50" height="50" src="https://img.icons8.com/color/48/000000/linkedin.png"/></a>
-      <a href="https://github.com/ArcenioSouza"><img width="50" height="50" src="https://img.icons8.com/fluency-systems-filled/48/000000/github.png"/></a>       
+      <h2>Arcenio Souza <br> 
+        <a href="https://www.linkedin.com/in/arceniofso/"><img width="50" height="50" src="https://img.icons8.com/color/48/000000/linkedin.png"/></a>
+        <a href="https://github.com/ArcenioSouza"><img width="50" height="50" src="https://img.icons8.com/fluency-systems-filled/48/000000/github.png"/></a>
+      </h2>  
    </div>
-   <hr>
+   
    <div align="center">
-      <img width="215" height="200" src="./img/Arcenio.jpeg"><br>
-      <a href="https://www.linkedin.com/in/arceniofso/"><img width="50" height="50" src="https://img.icons8.com/color/48/000000/linkedin.png"/></a>
-      <a href="https://github.com/ArcenioSouza"><img width="50" height="50" src="https://img.icons8.com/fluency-systems-filled/48/000000/github.png"/></a>       
+      <h2>Ivy Richa <br> 
+        <a href="https://www.linkedin.com/in/ivy-richa-30632517a/"><img width="50" height="50" src="https://img.icons8.com/color/48/000000/linkedin.png"/></a>
+        <a href="https://github.com/Ivyrch"><img width="50" height="50" src="https://img.icons8.com/fluency-systems-filled/48/000000/github.png"/></a>
+      </h2>  
    </div>
-   <hr>
+   
    <div align="center">
-      <img width="215" height="200" src="./img/Arcenio.jpeg"><br>
-      <a href="https://www.linkedin.com/in/arceniofso/"><img width="50" height="50" src="https://img.icons8.com/color/48/000000/linkedin.png"/></a>
-      <a href="https://github.com/ArcenioSouza"><img width="50" height="50" src="https://img.icons8.com/fluency-systems-filled/48/000000/github.png"/></a>       
+      <h2>Gabriel Lima <br> 
+        <a href="https://www.linkedin.com/in/gabrielimasantos/"><img width="50" height="50" src="https://img.icons8.com/color/48/000000/linkedin.png"/></a>
+        <a href="https://github.com/eogakrl"><img width="50" height="50" src="https://img.icons8.com/fluency-systems-filled/48/000000/github.png"/></a>
+      </h2>  
    </div>
-   <hr>
+   
    <div align="center">
-      <img width="215" height="200" src="./img/Arcenio.jpeg"><br>
-      <a href="https://www.linkedin.com/in/arceniofso/"><img width="50" height="50" src="https://img.icons8.com/color/48/000000/linkedin.png"/></a>
-      <a href="https://github.com/ArcenioSouza"><img width="50" height="50" src="https://img.icons8.com/fluency-systems-filled/48/000000/github.png"/></a>       
+      <h2>Cibele Martins <br> 
+        <a href="https://www.linkedin.com/in/cibele-martins-85b910169/"><img width="50" height="50" src="https://img.icons8.com/color/48/000000/linkedin.png"/></a>
+        <a href="https://github.com/CibeleMartins"><img width="50" height="50" src="https://img.icons8.com/fluency-systems-filled/48/000000/github.png"/></a>
+      </h2>  
    </div>
-   <hr>
+   
+   
 
 
  
