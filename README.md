@@ -47,10 +47,37 @@ Esse projeto consiste em um site baseado no modelo de sites de streaming como Ne
  []()
 
  # Colaboradores
+ 
+<div align="center" style="display: flex">
 
- <div>
-   <h2><img src="./img/Arcenio.png">Arcenio</h2>
-   <a href="https://www.linkedin.com/in/arceniofso/">LinkedIn</a>
-   <a href="https://github.com/ArcenioSouza">Github</a>
- </div>
+   <div align="center" style="margin-right: 5%">
+      <img width="50" height="50" style="border-radius: 50%" src="./img/Arcenio.jpeg">
+      <h2>Arcenio Souza</h2>   
+      <a href="https://www.linkedin.com/in/arceniofso/"><img width="30" height="30" src="https://img.icons8.com/color/48/000000/linkedin.png"/></a>
+      <a href="https://github.com/ArcenioSouza"><img width="30" height="30" src="https://img.icons8.com/fluency-systems-filled/48/000000/github.png"/></a>
+   </div>
+
+   <div align="center" style="margin-right: 5%">
+      <img width="50" height="50" style="border-radius: 50%" src="./img/Arcenio.jpeg">
+      <h2>Arcenio Souza</h2>   
+      <a href="https://www.linkedin.com/in/arceniofso/"><img width="30" height="30" src="https://img.icons8.com/color/48/000000/linkedin.png"/></a>
+      <a href="https://github.com/ArcenioSouza"><img width="30" height="30" src="https://img.icons8.com/fluency-systems-filled/48/000000/github.png"/></a>
+   </div>
+
+   <div align="center" style="margin-right: 5%">
+      <img width="50" height="50" style="border-radius: 50%" src="./img/Arcenio.jpeg">
+      <h2>Arcenio Souza</h2>   
+      <a href="https://www.linkedin.com/in/arceniofso/"><img width="30" height="30" src="https://img.icons8.com/color/48/000000/linkedin.png"/></a>
+      <a href="https://github.com/ArcenioSouza"><img width="30" height="30" src="https://img.icons8.com/fluency-systems-filled/48/000000/github.png"/></a>
+   </div>
+
+   <div align="center" style="margin-right: 5%">
+      <img width="50" height="50" style="border-radius: 50%" src="./img/Arcenio.jpeg">
+      <h2>Arcenio Souza</h2>   
+      <a href="https://www.linkedin.com/in/arceniofso/"><img width="30" height="30" src="https://img.icons8.com/color/48/000000/linkedin.png"/></a>
+      <a href="https://github.com/ArcenioSouza"><img width="30" height="30" src="https://img.icons8.com/fluency-systems-filled/48/000000/github.png"/></a>
+   </div>
+
+</div>
+ 
 
