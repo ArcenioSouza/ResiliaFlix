@@ -49,11 +49,9 @@ Esse projeto consiste em um site baseado no modelo de sites de streaming como Ne
  # Colaboradores
  
    <div>
-      <img width="50" height="50" src="./img/Arcenio.jpeg">
-      <div>
+      <img width="215" height="200" src="./img/Arcenio.jpeg">
          <a href="https://www.linkedin.com/in/arceniofso/"><img width="30" height="30" src="https://img.icons8.com/color/48/000000/linkedin.png"/></a>
-         <a href="https://github.com/ArcenioSouza"><img width="30" height="30" src="https://img.icons8.com/fluency-systems-filled/48/000000/github.png"/></a>
-      </div>        
+         <a href="https://github.com/ArcenioSouza"><img width="30" height="30" src="https://img.icons8.com/fluency-systems-filled/48/000000/github.png"/></a>       
    </div>
 
 
