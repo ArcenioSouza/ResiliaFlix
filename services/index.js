@@ -39,8 +39,8 @@
    })
 })()
 
-const buttonBuscar = document.querySelector('#btnBuscar')
+const buttonEntrar = document.querySelector('#btnEntrar')
 
-buttonBuscar.addEventListener('click', () => {
-   window.location = './pagBuscar.html'
+buttonEntrar.addEventListener('click', () => {
+   window.location = '../pages/home/home.html'
 })

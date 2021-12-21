@@ -39,10 +39,14 @@
    })
 })()
 
-(function() {
    let myCarousel = document.querySelector('#carouselExampleSlidesOnly')
    let carousel = new bootstrap.Carousel(myCarousel, {
      interval: 10000,
    })
-   return carousel; 
-})()
+
+const buttonPagInicial = document.querySelector('#pagina-inicial')
+
+buttonPagInicial.addEventListener('click', (e) => {
+   console.log(e)
+   window.location = '../../index.html'
+})
