@@ -39,13 +39,10 @@
    })
 })()
 
-let myCarousel = document.querySelector('#carouselExampleSlidesOnly')
-let carousel = new bootstrap.Carousel(myCarousel, {
-  interval: 20000,
-})
-
-const buttonBuscar = document.querySelector('#btnBuscar')
-
-buttonBuscar.addEventListener('click', () => {
-   window.location = './pagBuscar.html'
-})
+(function() {
+   let myCarousel = document.querySelector('#carouselExampleSlidesOnly')
+   let carousel = new bootstrap.Carousel(myCarousel, {
+     interval: 10000,
+   })
+   return carousel; 
+})()
