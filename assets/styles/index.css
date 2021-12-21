@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
+
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+body{
+   width: 100%;
+   max-height: 100vh;
+   background-color: #0D0126;
+}
+
+header{
+   height: 10vh;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 5px 10%;
+   border-bottom: 2px solid #F29849;
+}
+
+header h1{
+   color: #F29849;
+   font-size: 40px;
+   font-family: 'Allerta Stencil', sans-serif;
+}
+
+header button{
+   width: 174px;
+   margin-left: 15px;
+   padding: 5px 25px;
+   border-radius: 5px;
+   background-color: #F29849;
+   border: 2px solid #fff;
+   color: #fff;
+   font-size: 18px;
+}
+
+header button:hover{
+   border-color: #F29849;
+   color: #F29849;
+   background-color: #fff;
+}
+
+header button:active{
+   background-color: #F29849;
+   border: 2px solid #fff;
+   color: #fff;
+}
+
+.title{
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   padding: 3% 3%;
+   height: 50vh;
+   background-image: url("../img/backgroundHome.png");
+   border-bottom: 2px solid #F29849;
+}
+
+.title h1{
+   color: #fff;
+   font-family: 'Calistoga', cursive;
+   font-size: 65px;
+}
+
+.title button{
+   width: 265px;
+   height: 40px;
+   border-radius: 30px;
+   background-color: #F29849;
+   color: #fff;
+   font-size: 18px;
+   border: 2px solid #fff;
+   margin-top: 2%;
+}
+
+.title button:hover{
+   border-color: #F29849;
+   color: #F29849;
+   background-color: #fff;
+}
+
+.title button:active{
+   background-color: #F29849;
+   border: 2px solid #fff;
+   color: #fff;
+}
+
+#cards{
+   width: 100%;
+   height: 350px;
+   position: relative;
+   bottom: 130px;
+}
+
+.carousel-item {
+   display: none;
+   width: 100%;
+   height: 480px;
+   justify-content: space-evenly;
+   align-items: center;
+   backface-visibility: hidden;
+   flex-wrap: nowrap;
+ }
+
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev {
+  display: flex;
+}
+
+.poster{
+   width: 20%;
+   height: 100%;
+   margin: 5px;
+   border-radius: 10px;
+}
+
+.posterBusca{
+   width: 300px;
+   height: 400px;
+   margin: 5px;
+   border-radius: 10px;
+}
+
+#resultBusca{
+   width: 100%;
+}
+
+.imagens-busca{
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+#home:hover{
+   cursor: pointer;
+}
