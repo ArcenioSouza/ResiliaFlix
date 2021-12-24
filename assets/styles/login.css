@@ -1,0 +1,71 @@
+* { margin: 0%;
+    padding: 0%;
+}
+
+#imagem-fundo {
+    background: url("../img/backgroundHome.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    
+  }
+
+
+.tamanho-header { 
+    height: 10vh;
+}
+
+.cor-nav-bar { 
+    background-color: #0D0126;
+}
+
+
+.cor-titulo { 
+    color: #F29849;
+ }
+
+.fonte-titulo { 
+
+font-family: Allerta Stencil;
+font-style: normal;
+font-weight: normal;
+font-size: 60px;
+line-height: 22px;
+
+}
+
+.fonte-nav-bar { 
+ 
+    font-family: 'Abel', sans-serif;
+
+}
+
+.especificacoes-formulario { 
+    font-family: 'Abel', sans-serif;
+    color: white;
+    background-color: #F29849;
+    position: absolute;
+    margin: 30px;
+    width: 430px;
+    height: 422px;
+    border-radius: 5%;
+    
+}
+
+#cor-texto-senha { 
+    color:white;
+    
+}
+
+.cor-botao { 
+    background-color: #F29849;
+
+}
+
+.cor-roda-pe { 
+    background-color: #0D0126;
+}
+
+.footer { 
+    height: 10vh;
+}
