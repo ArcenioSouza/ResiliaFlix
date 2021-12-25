@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+
+* {
+  padding: 0;
+  margin: 0;
+  
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #0d0126;
+  
+}
+
+header{
+  width: 100%;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  padding: 5px 1%;
+  border-bottom: 2px solid #F29849;
+
+}
+
+header h1 {
+  color: #f29849;
+  font-size: 40px;
+  font-family: 'Allerta Stencil', sans-serif;
+
+}
+
+nav{
+  width: 85%;
+  
+}
+
+#listaNavegacao{
+  width: 60%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  margin: 0;
+
+}
+
+#listaNavegacao li{
+  display: flex;
+  list-style: none;
+  margin-left: 20px;
+  padding: 7px;
+
+}
+
+#listaNavegacao li:hover{
+  border: 1px solid #F29849;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+
+#listaNavegacao img{
+  margin-right: 5px;
+
+}
+
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-image: url('../img/backgroundPagCadastro.png');
+  background-size: cover;
+  
+}
+
+
+p {
+width: 90%;
+height: 100px;
+font-family: Calistoga;
+font-style: normal;
+font-weight: normal;
+font-size: 50px;
+color: white;
+margin-left: px;
+margin-top: 30px;
+
+}
+
+#formulário{
+  background-color:rgba(15, 15, 15, 0.54);
+  border-radius: 20px;
+  width: 900px;
+  height: 420px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 20px;
+ 
+}
+
+label{
+  font-family: 'Abel', sans-serif;
+  color: white;
+  font-size: 20px;
+  margin-top: 5px;
+
+}
+
+#nomeInput {
+  width: 186.23px;
+  height: 26.08px;
+  margin-top: 8px;
+
+}
+
+#emailInput {
+  width: 186.23px;
+  height: 26.08px;
+  margin-top: 8px;
+
+}
+
+#senhaInput {
+  width: 186.23px;
+  height: 26.08px;
+  margin-top: 8px;
+
+}
+
+#confirmaSInput {
+  width: 186.23px;
+  height: 26.08px;
+  margin-top: 8px;
+
+}
+
+#cepInput {
+  width: 186.23px;
+  height: 26.08px;
+  margin-top: 8px;
+
+}
+
+#ruaInput {
+  width: 186.23px;
+  height: 26.08px;
+  margin-top: 8px;
+
+}
+
+#bairroInput {
+  width: 186.23px;
+  height: 26.08px;
+  margin-top: 8px;
+
+}
+
+#complementoInput {
+  width: 186.23px;
+  height: 26.08px;
+  margin-top: 8px;
+
+}
+
+#cidadeInput {
+  width: 186.23px;
+  height: 26.08px;
+  margin-top: 8px;
+
+}
+
+#numeroInput {
+  width: 93.11px;
+  height: 26.08px;
+  margin-top: 8px;
+  flex-wrap: wrap;
+  display: flex;
+
+}
+
+#estadoInput {
+  width: 93.11px;
+  height: 26.08px;
+  margin-top: 8px;
+
+}
+
+footer {
+  height: 10vh;
+  border-top: 2px solid #f29849;
+
+}
+
+button {
+  width: 270px;
+  height: 35px;
+  color: white;
+  background: #F29849;
+  border: 2px solid #FFFFFF;
+  border-radius: 30px;
+
+}
+
+button:hover{
+  background-color:#0d01268e ;
+  border: 2px solid #F29849;
+  color: #F29849;
+
+}
