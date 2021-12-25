@@ -82,7 +82,7 @@ nav{
 
 }
 
-#listaNavegacao img{
+#listaNavegacao li{
   margin-right: 5px;
 
 }
@@ -107,7 +107,6 @@ font-style: normal;
 font-weight: normal;
 font-size: 50px;
 color: white;
-margin-left: px;
 margin-top: 30px;
 
 }
@@ -263,4 +262,21 @@ footer {
   justify-content: space-between;
   flex-direction: column;
   margin-left: 50px;
+
 }
+
+#cadastroSucesso {
+  display: none;
+  width: 780px;
+  height: 420px;
+  font-family: Calistoga;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 50px;
+  color: white;
+  text-align: center;
+  margin-top: 85px;
+  
+
+}
+
