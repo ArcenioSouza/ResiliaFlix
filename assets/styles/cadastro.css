@@ -23,6 +23,7 @@ header{
   height: 8vh;
   display: flex;
   align-items: center;
+  
   padding: 5px 1%;
   border-bottom: 2px solid #F29849;
 
@@ -32,6 +33,23 @@ header h1 {
   color: #f29849;
   font-size: 40px;
   font-family: 'Allerta Stencil', sans-serif;
+
+}
+
+#btnEntrar {
+  width: 150px;
+  height: 30px;
+  color: white;
+  background: #F29849;
+  border: 2px solid #FFFFFF;
+  border-radius: 5px;
+  
+}
+
+#btnEntrar:hover{
+  background-color:#0d01268e ;
+  border: 2px solid #F29849;
+  color: #F29849;
 
 }
 
@@ -97,7 +115,7 @@ margin-top: 30px;
 #formulário{
   background-color:rgba(15, 15, 15, 0.54);
   border-radius: 20px;
-  width: 900px;
+  width: 780px;
   height: 420px;
   display: flex;
   flex-direction: column;
@@ -186,11 +204,17 @@ label{
 
 }
 
+
 #estadoInput {
   width: 93.11px;
   height: 26.08px;
   margin-top: 8px;
 
+}
+
+.formGroupMargin {
+  margin-bottom: 105px;
+  
 }
 
 footer {
@@ -199,19 +223,44 @@ footer {
 
 }
 
-button {
+#btnCadastrar {
   width: 270px;
   height: 35px;
   color: white;
   background: #F29849;
   border: 2px solid #FFFFFF;
   border-radius: 30px;
+  margin-top: 50px;
+  margin-left: 85px;
 
 }
 
-button:hover{
+#btnCadastrar:hover{
   background-color:#0d01268e ;
   border: 2px solid #F29849;
   color: #F29849;
 
+}
+
+#coluna1 {
+  width: 230px;
+  height: 420px;
+  margin-left: 30px;
+  
+}
+
+#coluna2 {
+  width: 230px;
+  height: 420px;
+  margin-left: 50px;
+  
+}
+
+#coluna3 {
+  width: 230px;
+  height: 420px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-left: 50px;
 }
