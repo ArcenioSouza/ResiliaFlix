@@ -277,6 +277,14 @@ footer {
   text-align: center;
   margin-top: 85px;
   
+}
 
+#erroCep {
+  font-family: 'Abel', sans-serif;
+  color: red;
+  font-size: 12px;
+  position:relative;
+  bottom: 25px;
+  left: 8px;
 }
 
