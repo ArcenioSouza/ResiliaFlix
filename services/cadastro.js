@@ -16,8 +16,6 @@ cadastrar.addEventListener('click', (e)=>{
 
   e.preventDefault()
 
-
-
   if ($("#ruaInput").val()=="" && $("#bairroInput").val()=="" && $("#cidadeInput").val()=="" &&
    $("#estadoInput").val() == "") {
       alert("Preencha todos os campos anets de cadastrar");
@@ -28,10 +26,7 @@ cadastrar.addEventListener('click', (e)=>{
      div3.style.display= "none";
    }
 
-
-
 })
-
 
 const cep= document.querySelector("#cepInput");
 
