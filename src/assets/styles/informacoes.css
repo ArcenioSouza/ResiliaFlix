@@ -172,6 +172,10 @@ nav{
    border-radius: 10px;
 }
 
+.poster:hover{
+   cursor: pointer;
+}
+
 #home:hover{
    cursor: pointer;
 }

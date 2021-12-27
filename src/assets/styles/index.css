@@ -124,6 +124,10 @@ header button:active{
    border-radius: 10px;
 }
 
+.poster:hover{
+   cursor: pointer;
+}
+
 .posterBusca{
    width: 300px;
    height: 400px;
