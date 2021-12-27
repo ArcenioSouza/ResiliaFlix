@@ -7,26 +7,33 @@ buttonPagInicial.addEventListener('click', () => {
 })
 
 const cadastrar= document.querySelector("#btnCadastrar");
-const div1= document.querySelector("#coluna1");
-const div2= document.querySelector("#coluna2");
-const div3= document.querySelector("#coluna3");
-const cadastroOk= document.querySelector("#cadastroSucesso");
 
 cadastrar.addEventListener('click', (e)=>{
+
+  const confirmSVal= $("#confirmaSInput").val()
+  const senhaVal= $("#senhaInput").val()
+  const emailVal= $("#emailInput").val()
 
   e.preventDefault()
 
   if ($("#ruaInput").val()=="" || $("#bairroInput").val()=="" || $("#cidadeInput").val()=="" ||
       $("#estadoInput").val() == "" || $("#nomeInput").val()=="" || $("#emailInput").val()=="" || $("#senhaInput").val()=="" || $("#confirmaSInput").val()=="" || $("#complementoInput").val()=="" || $("#numeroInput").val()=="") {
      
-      alert("Preencha todos os campos antes de cadastrar");
-
+      alert("Preencha todos os campos antes de se cadastrar.");
     
+  }else if (senhaVal.length < 8 || confirmSVal.length != senhaVal.length || confirmSVal != senhaVal ) {
+      alert("Preencha os campos de senha corretamente.");
+  
+  } else if (emailVal.indexOf("@") < 0) {
+    
+    alert("Preencha o e-mail corretamente.");
+
   }else {
-    cadastroOk.style.display= "flex";
-    div1.style.display= "none";
-    div2.style.display= "none";
-    div3.style.display= "none";
+    $("#cadastroSucesso").css("display","flex");
+    $("#coluna1").css("display","none");
+    $("#coluna2").css("display","none");
+    $("#coluna3").css("display","none");
+
     }
 
 })
@@ -136,7 +143,7 @@ confirmSenha.addEventListener('blur', () => {
 
   try {
 
-    if (confirmSVal.length == senhaVal.length) {
+    if (confirmSVal.length == senhaVal.length && confirmSVal == senhaVal) {
       
       $("#erroSenha1").css("display", "none")
 
