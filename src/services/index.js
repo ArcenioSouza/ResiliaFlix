@@ -6,6 +6,8 @@ let cards = document.querySelector("#cards");
 let divInformacoes = document.querySelector('.container-informacoes')
 let poster;
 let infoFilmes;
+let btnCadastro = document.querySelector('#btnCadastro')
+let btnEntrar = document.querySelector('#btnEntrar')
 
 window.addEventListener("load", () => {
    filmesController._criaListaDeFilmes(listaDeFilmes._listaFilmes);
@@ -67,6 +69,8 @@ window.addEventListener("load", () => {
 
             if(href.indexOf("informacoes") > 0){
 
+            } else if (href.indexOf("home") > 0) {
+               location = './informacoes.html'
             } else {
                location = './src/pages/informacoes.html'
             }
@@ -81,4 +85,6 @@ window.addEventListener("load", () => {
    }, [1500]);
 });
 
+btnCadastro.addEventListener('click', () => location = './src/pages/cadastro.html')
 
+btnEntrar.addEventListener('click', () => location = './src/pages/logIn.html')

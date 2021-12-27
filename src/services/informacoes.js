@@ -1,1 +1,1 @@
-document.querySelector('#pagina-inicial').addEventListener('click', () => location = '../../index.html')
+document.querySelector('#pagina-inicial').addEventListener('click', () => location = '../pages/home.html')
