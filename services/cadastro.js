@@ -16,15 +16,18 @@ cadastrar.addEventListener('click', (e)=>{
 
   e.preventDefault()
 
-  if ($("#ruaInput").val()=="" && $("#bairroInput").val()=="" && $("#cidadeInput").val()=="" &&
-   $("#estadoInput").val() == "") {
-      alert("Preencha todos os campos anets de cadastrar");
-   }else {
-     cadastroOk.style.display= "flex";
-     div1.style.display= "none";
-     div2.style.display= "none";
-     div3.style.display= "none";
-   }
+  if ($("#ruaInput").val()=="" || $("#bairroInput").val()=="" || $("#cidadeInput").val()=="" ||
+      $("#estadoInput").val() == "" || $("#nomeInput").val()=="" || $("#emailInput").val()=="" || $("#senhaInput").val()=="" || $("#confirmaSInput").val()=="" || $("#complementoInput").val()=="" || $("#numeroInput").val()=="") {
+     
+      alert("Preencha todos os campos antes de cadastrar");
+
+    
+  }else {
+    cadastroOk.style.display= "flex";
+    div1.style.display= "none";
+    div2.style.display= "none";
+    div3.style.display= "none";
+    }
 
 })
 
@@ -52,6 +55,7 @@ const cep= document.querySelector("#cepInput");
               $("#bairroInput").val(bairroResult);
               $("#cidadeInput").val(cidadeResult);
               $("#estadoInput").val(estadoResult);
+              $("#erroCep").text("");
             
           }})
   
@@ -73,8 +77,79 @@ const cep= document.querySelector("#cepInput");
       
     })
 
+
+const emailErro= document.querySelector("#emailInput")
+
+emailErro.addEventListener('blur', ()=> {
+
+  const emailVal= $("#emailInput").val()
+  try {
+    if (emailVal.indexOf("@") > 0){
+      
+      $("#erroEmail").css("display", "none")
+
+    } else {
+      throw new Error ("E-mail inválido");
+    }
+  } catch (erro) {
   
+      $("#erroEmail").text("E-mail inválido");
+      $("#erroEmail").css("display", "flex")
+      console.log(erro.message)
+
+  }
+})
+
+const senhaInput= document.querySelector("#senhaInput")
+
+senhaInput.addEventListener('blur', () => {
+
+  const senhaVal= $("#senhaInput").val()
+ 
+
+  try {
+
+    if (senhaVal.length == 8) {
+      
+      $("#erroSenha").css("display", "none")
+
+    } else {
+      throw new Error ("Senha inválida")
+    }     
+    
+  } catch(erro) {
+    $("#erroSenha").text("Deve conter 8 caracteres");
+    $("#erroSenha").css("display", "flex")
+    console.log(erro.message)
+
+  }
+
+})
 
 
+const confirmSenha= document.querySelector("#confirmaSInput")
 
+confirmSenha.addEventListener('blur', () => {
+
+  const confirmSVal= $("#confirmaSInput").val()
+  const senhaVal= $("#senhaInput").val()
+
+  try {
+
+    if (confirmSVal.length == senhaVal.length) {
+      
+      $("#erroSenha1").css("display", "none")
+
+    } else {
+      throw new Error ("Senha inválida")
+    }     
+    
+  } catch(erro) {
+    $("#erroSenha1").text("Senha inválida");
+    $("#erroSenha1").css("display", "flex")
+    console.log(erro.message)
+
+  }
+
+})
 
