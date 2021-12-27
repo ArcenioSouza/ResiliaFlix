@@ -1,18 +1,20 @@
-* { margin: 0%;
-    padding: 0%;
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 #imagem-fundo {
     background: url("../img/backgroundHome.png");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 80vh;
+    height: 83vh;
     
   }
 
 
 .tamanho-header { 
-    height: 10vh;
+    height: 7vh;
 }
 
 .cor-nav-bar { 
