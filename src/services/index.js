@@ -18,22 +18,28 @@ window.addEventListener("load", () => {
          cards.innerHTML = carousel._templatePosterInformacoesDesktop(
             listaDeFilmes._listaFilmes
          );
-         let info = new Informacoes();
-         divInformacoes.innerHTML = info._viewInfoFilme();
+         setTimeout(() => {
+            let info = new Informacoes();
+            divInformacoes.innerHTML = info._viewInfoFilme();
+         }, [1000]);
 
       } else if (largura > 500 && href.indexOf("informacoes") > 0) {
          cards.innerHTML = carousel._templatePosterInformacoesTablet(
             listaDeFilmes._listaFilmes
          );
-         let info = new Informacoes();
-         divInformacoes.innerHTML = info._viewInfoFilme();
+         setTimeout(() => {
+            let info = new Informacoes();
+            divInformacoes.innerHTML = info._viewInfoFilme();
+         }, [1000]);
 
       }else if (largura < 500 && href.indexOf("informacoes") > 0) {
             cards.innerHTML = carousel._templatePosterInformacoesMobile(
                listaDeFilmes._listaFilmes
             );
-            let info = new Informacoes();
-            divInformacoes.innerHTML = info._viewInfoFilme();
+            setTimeout(() => {
+               let info = new Informacoes();
+               divInformacoes.innerHTML = info._viewInfoFilme();
+            }, [1000]);
 
       } else if (largura > 1000) {
          cards.innerHTML = carousel._templatePosterDesktop(
