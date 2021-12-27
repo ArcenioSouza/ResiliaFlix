@@ -1,8 +1,16 @@
 function recuperarSenha() { 
 
-  window.location.replace("../recupSenha/recupSenha.html");
+  window.location.replace("../pages/recupSenha.html");
 
 }
+
+function cadastrarUsuario () { 
+
+  window.location.replace("../pages/cadastro.html");
+
+
+}
+
 
 
 var form = document.forms[0];
