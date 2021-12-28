@@ -29,10 +29,13 @@ cadastrar.addEventListener('click', (e)=>{
     alert("Preencha o e-mail corretamente.");
 
   }else {
-    let pessoa= new Cadastro($("#nomeInput").val(), $("#emailInput").val(), $("#senhaInput").val(), $("#cepInput").val(), $("#ruaInput").val(), $("#bairroInput").val(), $("#complementoSInput").val(), $("#cidadeInput").val(), $("#numeroInput").val(), $("#estadoInput").val())
+    let pessoa = new Cadastro($("#nomeInput").val(), $("#emailInput").val(), $("#senhaInput").val(), $("#cepInput").val(), $("#ruaInput").val(), $("#bairroInput").val(), $("#complementoSInput").val(), $("#cidadeInput").val(), $("#numeroInput").val(), $("#estadoInput").val())
 
     console.log(pessoa)
-    localStorage.setItem(pessoa.email, JSON.stringify(pessoa));
+    let salvarCadastro = new CadastroController();
+    salvarCadastro._salvarUsuario(pessoa)
+
+    salvarCadastro._verificarUsuario(pessoa.email)
     
     $("#cadastroSucesso").css("display","flex");
     $("#coluna1").css("display","none");
