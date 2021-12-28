@@ -1,5 +1,9 @@
 class CadastroController {
 
+   constructor(){
+   
+   }
+
    _salvarUsuario(dados){
       $.ajax({
          url: (`https://api-memorycard.herokuapp.com/cadastroResiliaFlix/`),
@@ -16,16 +20,17 @@ class CadastroController {
             numero: dados.numero,
             estado: dados.estado
          },
-         success: function(data){
-            console.log(`${data.nome} cadastrado no sistema`)
+         success: function(){
+            $("#cadastroSucesso").css("display","flex");
+            $("#coluna1").css("display","none");
+            $("#coluna2").css("display","none");
+            $("#coluna3").css("display","none");
+            setTimeout(()=>{
+               location = '../pages/home.html'
+            }, [2000])
          },
-         error: function(error){
-            if(error.status == 500){
-               console.log("Esse e-mail já existe no sistema")
-            } else {
-               console.log(error.responseText)
-            }
-            
+         error: function(){
+            throw new Error('Esse e-mail já está cadastrado em nosso sistema')            
          }
       })
    }

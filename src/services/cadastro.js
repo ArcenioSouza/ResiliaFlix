@@ -32,19 +32,7 @@ cadastrar.addEventListener('click', (e)=>{
     let pessoa = new Cadastro($("#nomeInput").val(), $("#emailInput").val(), $("#senhaInput").val(), $("#cepInput").val(), $("#ruaInput").val(), $("#bairroInput").val(), $("#complementoSInput").val(), $("#cidadeInput").val(), $("#numeroInput").val(), $("#estadoInput").val())
 
     let salvarCadastro = new CadastroController();
-
     salvarCadastro._salvarUsuario(pessoa)
-
-    salvarCadastro._verificarUsuario(pessoa.email)
-    setTimeout(() => {
-      console.log(resultado)
-    },[2000])   
-
-    $("#cadastroSucesso").css("display","flex");
-    $("#coluna1").css("display","none");
-    $("#coluna2").css("display","none");
-    $("#coluna3").css("display","none");
-
     }
 
 })
