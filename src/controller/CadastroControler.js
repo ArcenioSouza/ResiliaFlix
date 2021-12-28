@@ -17,7 +17,15 @@ class CadastroController {
             estado: dados.estado
          },
          success: function(data){
-            console.log(data)
+            console.log(`${data.nome} cadastrado no sistema`)
+         },
+         error: function(error){
+            if(error.status == 500){
+               console.log("Esse e-mail já existe no sistema")
+            } else {
+               console.log(error.responseText)
+            }
+            
          }
       })
    }
@@ -27,7 +35,7 @@ class CadastroController {
          url: (`https://api-memorycard.herokuapp.com/cadastroResiliaFlix/${email}`),
          method: 'get',
          success: function(response){
-            console.log("Pessoa cadastrada")
+            console.log('Usuário existente no banco de dados')
          }
       })
    }
