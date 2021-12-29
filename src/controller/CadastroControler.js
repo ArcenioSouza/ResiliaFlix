@@ -20,6 +20,7 @@ class CadastroController {
             numero: dados.numero,
             estado: dados.estado
          },
+         
          success: function(){
             $("#cadastroSucesso").css("display","flex");
             $("#coluna1").css("display","none");
@@ -40,6 +41,7 @@ class CadastroController {
          url: (`https://api-memorycard.herokuapp.com/cadastroResiliaFlix/${email}`),
          method: 'get',
          success: function(response){
+            
             console.log('Usuário existente no banco de dados')
          }
       })

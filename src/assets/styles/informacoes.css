@@ -26,28 +26,31 @@ header{
 }
 
 header h1{
+   width: 16%;
    color: #F29849;
    font-size: 40px;
    font-family: 'Allerta Stencil', sans-serif;
    margin: 0;
-   width: 20%;
+   position: absolute;
+   left: 1%;
 }
 
 nav{
    display: flex;
-   justify-content: flex-start;
+   justify-content: space-between;
    align-items: center;
-   width: 84%;
+   width: 100%;
 }
 
 #lista-navegacao{
    color: #fff;
    display: flex;
-   justify-content: flex-start;
+   justify-content: center;
    align-items: center;
    margin: 0;
+   padding: 0;
    list-style: none;
-   padding-left: 5%;
+   width: 100%;
 }
 
 #lista-login{
@@ -58,7 +61,7 @@ nav{
    margin: 0;
    list-style: none;
    position: absolute;
-   right: 2px;
+   right: 1%;
 }
 
 #lista-login li{
@@ -79,8 +82,8 @@ nav{
 
 #lista-navegacao li{
    display: flex;
-   margin-right: 20px;
-   padding: 3px;
+   margin-right: 2%;
+   padding: 5px;
    align-items: center;
    justify-content: center;
 }
@@ -152,11 +155,9 @@ nav{
 .filmes {
    display: none;
    width: 100%;
-   height: 35vh;
-   justify-content: center;
+   height: 47vh;
+   justify-content: space-evenly;
    align-items: center;
-   backface-visibility: hidden;
-   flex-wrap: nowrap;
  }
 
 .carousel-item.active,
@@ -213,11 +214,10 @@ nav{
    }
 
    header{
-      width: 100%;
       height: 10vh;
       display: flex;
-      justify-content: center;
-      align-items: center;
+      justify-content: flex-start;
+      align-items: flex-start;
       flex-direction: column;
       padding: 5px 1%;
       border-bottom: 2px solid #F29849;
@@ -225,15 +225,12 @@ nav{
    
    header h1{
       color: #F29849;
-      font-size: 40px;
+      font-size: 30px;
       font-family: 'Allerta Stencil', sans-serif;
       margin: 0;
-      width: 100%;
-   }
-
-   nav{
-      width: 100%;
-      justify-content: center;
+      width: 16%;
+      position: absolute;
+      left: 1%;
    }
 
    #lista-login{
@@ -243,14 +240,9 @@ nav{
    }
    
    #lista-navegacao{
-      color: #fff;
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      margin: 0;
-      list-style: none;
-      padding-left: 5%;
       font-size: 12px;
+      position: relative;
+      top: 4.5vh;
    }
 
    #lista-navegacao li img{
@@ -275,13 +267,6 @@ nav{
 }
 
 @media (max-width: 700px) {
-   .title{
-      border-bottom: none;
-   }
-   
-   .title h1{
-      font-size: 35px;
-   }
 
    .poster{
       width: 24%;
@@ -289,33 +274,11 @@ nav{
       border-radius: 10px;
    }
 
-   .title button{
-      width: 165px;
-      height: 40px;
-      border-radius: 30px;
-      background-color: #F29849;
-      color: #fff;
-      font-size: 14px;
-      border: 2px solid #fff;
-      margin-top: 2%;
-   }
-
    header h1{
       color: #F29849;
       font-size: 30px;
       font-family: 'Allerta Stencil', sans-serif;
       margin: 0;
-   }
-   
-   header button{
-      width: 100px;
-      margin-left: 15px;
-      padding: 5px 10px;
-      border-radius: 5px;
-      background-color: #F29849;
-      border: 2px solid #fff;
-      color: #fff;
-      font-size: 16px;
    }
 
    .background-informacoes{
@@ -350,29 +313,26 @@ nav{
       font-size: 14px;
    }
 
+   header h1{
+      color: #F29849;
+      font-size: 30px;
+      font-family: 'Allerta Stencil', sans-serif;
+      margin: 0;
+   }   
+   
+   #titulo{
+      font-family: 'Calistoga', sans-serif;
+      font-size: 25px;
+   }
+
 }
 
 @media (max-width: 500px) {
+
    .poster{
       width: 48%;
       margin: 5px;
       border-radius: 10px;
-   }
-
-   .title h1{
-      margin-top: 10%;
-      font-size: 25px;
-   }
-
-   .title button{
-      width: 150px;
-      height: 35px;
-      border-radius: 30px;
-      background-color: #F29849;
-      color: #fff;
-      font-size: 14px;
-      border: 2px solid #fff;
-      margin-top: 2%;
    }
 
    .background-informacoes{
@@ -388,4 +348,6 @@ nav{
    #imagem{
       display: none;
    }
+
+   
 }
