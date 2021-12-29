@@ -1,6 +1,30 @@
 class Carousel {
+   constructor(element) {
+      this.element = element;
+      this.largura = window.screen.width;
+      this.href = window.location.href;
+   }
 
-   _templatePosterDesktop(listaDeFilmes){
+   _updateTemplate(listaFilmes) {
+      if (this.largura > 1000 && this.href.indexOf("informacoes") > 0) {
+         this.element.innerHTML =
+            this._templatePosterInformacoesDesktop(listaFilmes);
+      } else if (this.largura > 500 && this.href.indexOf("informacoes") > 0) {
+         this.element.innerHTML =
+            this._templatePosterInformacoesTablet(listaFilmes);
+      } else if (this.largura < 500 && this.href.indexOf("informacoes") > 0) {
+         this.element.innerHTML =
+            this._templatePosterInformacoesMobile(listaFilmes);
+      } else if (this.largura > 1000) {
+         this.element.innerHTML = this._templatePosterDesktop(listaFilmes);
+      } else if (this.largura > 500) {
+         this.element.innerHTML = this._templatePosterTablet(listaFilmes);
+      } else {
+         this.element.innerHTML = this._templatePosterMobile(listaFilmes);
+      }
+   }
+
+   _templatePosterDesktop(listaDeFilmes) {
       return `
       <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
          <div class="carousel-inner">
@@ -32,10 +56,10 @@ class Carousel {
          <span class="visually-hidden">Next</span>
          </button>
       </div>
-      `
+      `;
    }
 
-   _templatePosterTablet(listaDeFilmes){
+   _templatePosterTablet(listaDeFilmes) {
       return `
       <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
          <div class="carousel-inner">
@@ -70,10 +94,11 @@ class Carousel {
          <span class="visually-hidden">Next</span>
          </button>
       </div>
-      `
+      `;
    }
 
-   _templatePosterMobile(listaDeFilmes){
+   _templatePosterMobile(listaDeFilmes) {
+      console.log(listaDeFilmes);
       return `
       <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
          <div class="carousel-inner">
@@ -114,11 +139,11 @@ class Carousel {
          <span class="visually-hidden">Next</span>
          </button>
       </div>
-      `
+      `;
    }
 
-      _templatePosterInformacoesDesktop(listaDeFilmes){
-         return `
+   _templatePosterInformacoesDesktop(listaDeFilmes) {
+      return `
          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                <div class="carousel-item active" id="carousel1">
@@ -147,10 +172,10 @@ class Carousel {
             <span class="visually-hidden">Next</span>
             </button>
          </div>
-         `
+         `;
    }
 
-   _templatePosterInformacoesTablet(listaDeFilmes){
+   _templatePosterInformacoesTablet(listaDeFilmes) {
       return `
       <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
          <div class="carousel-inner">
@@ -182,10 +207,10 @@ class Carousel {
          <span class="visually-hidden">Next</span>
          </button>
       </div>
-      `
+      `;
    }
 
-   _templatePosterInformacoesMobile(listaDeFilmes){
+   _templatePosterInformacoesMobile(listaDeFilmes) {
       return `
       <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
          <div class="carousel-inner">
@@ -223,6 +248,6 @@ class Carousel {
          <span class="visually-hidden">Next</span>
          </button>
       </div>
-      `
+      `;
    }
 }
