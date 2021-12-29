@@ -75,11 +75,35 @@ line-height: 22px;
 @media (max-width: 700px) { 
 
     #formulario {
-        height: 60vh;
+        height: 70vh;
         width: 40vh;
+        
+        
+    }
+    .tamanho-header { 
+        margin-bottom: 5vh;
         
     }
 
+}
+
+@media (max-width:375px ) { 
+
+    #formulario {
+        
+        height: 80vh;
+        width: 40vh;
+      
+    
+
+}
+
+
+#imagem-fundo { 
+
+    height: 100vh;
+
+}
 }
     
     
