@@ -6,13 +6,13 @@
     background: url("../img/backgroundHome.png");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 80vh;
+    height: 83vh;
     
   }
 
 
 .tamanho-header { 
-    height: 10vh;
+    height: 7vh;
 }
 
 .cor-nav-bar { 
@@ -70,3 +70,16 @@ line-height: 22px;
 .footer { 
     height: 10vh;
 }
+
+
+@media (max-width: 700px) { 
+
+    #formulario {
+        height: 60vh;
+        width: 40vh;
+        
+    }
+
+}
+    
+    
