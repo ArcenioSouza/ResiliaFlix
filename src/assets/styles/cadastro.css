@@ -18,97 +18,81 @@ body {
   
 }
 
-header{
+header {
   width: 100%;
-  height: 8vh;
+  height: 7vh;
   display: flex;
   align-items: center;
-  
   padding: 5px 1%;
-  border-bottom: 2px solid #F29849;
-
+  border-bottom: 2px solid #f29849;
+  background-color: #0d0126;
 }
 
 header h1 {
   color: #f29849;
   font-size: 40px;
-  font-family: 'Allerta Stencil', sans-serif;
-
+  font-family: "Allerta Stencil", sans-serif;
+  margin: 0;
+  width: 16%;
+  position: absolute;
+  left: 1%;
 }
 
-#btnEntrar {
-  width: 150px;
-  height: 30px;
-  color: white;
-  background: #F29849;
-  border: 2px solid #FFFFFF;
-  border-radius: 5px;
-  
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
-#btnEntrar:hover{
-  background-color:#0d01268e ;
-  border: 2px solid #F29849;
-  color: #F29849;
-
-}
-
-nav{
-  width: 85%;
-  
-}
-
-#listaNavegacao{
-  width: 60%;
+#lista-navegacao {
   color: #fff;
   display: flex;
+  justify-content: flex-start;
   align-items: center;
   margin: 0;
-
-}
-
-#listaNavegacao li{
-  display: flex;
+  padding-left: 250px;
   list-style: none;
-  margin-left: 20px;
-  padding: 7px;
-
+  width: 100%;
 }
 
-#listaNavegacao li:hover{
-  border: 1px solid #F29849;
+#lista-navegacao li {
+  display: flex;
+  margin-right: 2%;
+  padding: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+#lista-navegacao li:hover {
+  border: 1px solid #f29849;
   border-radius: 5px;
   cursor: pointer;
-
 }
 
-#listaNavegacao li{
+#lista-navegacao img {
   margin-right: 5px;
-
 }
 
 #container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 100%;
-  height: 100vh;
+  flex-direction: column;
+  align-items: center;
   background-image: url('../img/backgroundPagCadastro.png');
   background-size: cover;
-  
+  padding: 3% 0;
 }
 
 
 p {
-width: 90%;
-height: 100px;
-font-family: Calistoga;
-font-style: normal;
-font-weight: normal;
-font-size: 50px;
-color: white;
-margin-top: 30px;
-
+  width: 90%;
+  height: 100px;
+  font-family: Calistoga;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 50px;
+  color: white;
+  margin-top: 30px;
 }
 
 #formulário{

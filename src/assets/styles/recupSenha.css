@@ -107,6 +107,7 @@
 
 .footer { 
     height: 10vh;
+    border-top: 2px solid #f29849;
 }
  
  @media (max-width: 500px) {
