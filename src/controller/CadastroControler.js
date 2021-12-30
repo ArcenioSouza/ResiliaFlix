@@ -26,8 +26,9 @@ class CadastroController {
             $("#coluna1").css("display","none");
             $("#coluna2").css("display","none");
             $("#coluna3").css("display","none");
+
             setTimeout(()=>{
-               location = '../pages/home.html'
+               location = '../../index.html'
             }, [2000])
          },
          error: function(){
