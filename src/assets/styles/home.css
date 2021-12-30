@@ -43,10 +43,10 @@ nav{
 #lista-navegacao{
    color: #fff;
    display: flex;
-   justify-content: center;
+   justify-content: flex-start;
    align-items: center;
    margin: 0;
-   padding: 0;
+   padding-left: 250px;
    list-style: none;
    width: 100%;
 }
@@ -148,7 +148,7 @@ nav{
    }
 
    header{
-      height: 10vh;
+      height: 12vh;
       display: flex;
       justify-content: flex-start;
       align-items: flex-start;
@@ -176,7 +176,9 @@ nav{
    #lista-navegacao{
       font-size: 12px;
       position: relative;
-      top: 4.5vh;
+      top: 6vh;
+      justify-content: center;
+      padding-left: 0;
    }
 
    #lista-navegacao li img{

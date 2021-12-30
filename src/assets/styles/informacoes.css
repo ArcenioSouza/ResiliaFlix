@@ -45,10 +45,10 @@ nav{
 #lista-navegacao{
    color: #fff;
    display: flex;
-   justify-content: center;
+   justify-content: flex-start;
    align-items: center;
    margin: 0;
-   padding: 0;
+   padding-left: 250px;
    list-style: none;
    width: 100%;
 }
@@ -182,13 +182,6 @@ nav{
 }
 
 @media (max-width: 1200px) {
-   .title{
-      border-bottom: none;
-   }
-   
-   .title h1{
-      font-size: 45px;
-   }
 
    .background-informacoes{
       width: 80%;
@@ -197,16 +190,14 @@ nav{
 }
 
 @media (max-width: 1000px) {
-   .title{
-      border-bottom: none;
-   }
-   
-   .title h1{
-      font-size: 45px;
-   }
 
    .background-informacoes{
       width: 90%;
+      height: 80%;
+   }
+
+   #informacoes {
+      font-size: 14px;
    }
 
    .poster{
@@ -214,7 +205,7 @@ nav{
    }
 
    header{
-      height: 10vh;
+      height: 12vh;
       display: flex;
       justify-content: flex-start;
       align-items: flex-start;
@@ -242,7 +233,9 @@ nav{
    #lista-navegacao{
       font-size: 12px;
       position: relative;
-      top: 4.5vh;
+      top: 6vh;
+      justify-content: center;
+      padding-left: 0;
    }
 
    #lista-navegacao li img{
@@ -283,18 +276,10 @@ nav{
 
    .background-informacoes{
       width: 98%;
-      height: 85%;
-      padding: 2%;
-      background-color: rgba(0, 0, 0, 0.521);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border-radius: 15px;
-      margin-top: 2%;
+      height: 80%;
    }
    
    #titulo{
-      font-family: 'Calistoga', sans-serif;
       font-size: 25px;
    }
    
@@ -310,7 +295,7 @@ nav{
    
    #informacoes {
       height: 90%;
-      font-size: 14px;
+      font-size: 12px;
    }
 
    header h1{
@@ -336,7 +321,7 @@ nav{
    }
 
    .background-informacoes{
-      height: 85%;
+      height: 80%;
    }
 
    #informacoes {
