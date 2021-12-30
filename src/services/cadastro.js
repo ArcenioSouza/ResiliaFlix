@@ -1,10 +1,10 @@
 
-const buttonPagInicial = document.querySelector('#paginaInicial')
+// const buttonPagInicial = document.querySelector('#paginaInicial')
 
-buttonPagInicial.addEventListener('click', () => {
+// buttonPagInicial.addEventListener('click', () => {
    
-   window.location = '../../index.html'
-})
+//    window.location = '../../index.html'
+// })
 
 const cadastrar= document.querySelector("#btnCadastrar");
 

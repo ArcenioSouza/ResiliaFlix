@@ -42,9 +42,9 @@ header button{
 }
 
 header button:hover{
-   border-color: #F29849;
-   color: #F29849;
-   background-color: #fff;
+   background-color:#0d01268e ;
+  border: 2px solid #F29849;
+  color: #F29849;
 }
 
 header button:active{
@@ -84,15 +84,15 @@ header button:active{
 }
 
 .title button:hover{
-   border-color: #F29849;
-   color: #F29849;
-   background-color: #fff;
+   background-color:#0d01268e ;
+  border: 2px solid #F29849;
+  color: #F29849;
 }
 
 .title button:active{
-   background-color: #F29849;
-   border: 2px solid #fff;
-   color: #fff;
+   background-color:#0d01268e ;
+  border: 2px solid #F29849;
+  color: #F29849;
 }
 
 #cards{
