@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
+
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+body{
+   width: 100%;
+   max-height: 100vh;
+   background-color: #0D0126;
+}
+
+header{
+   width: 100%;
+   height: 7vh;
+   display: flex;
+   align-items: center;
+   padding: 5px 1%;
+   border-bottom: 2px solid #F29849;
+}
+
+header h1{
+   color: #F29849;
+   font-size: 40px;
+   font-family: 'Allerta Stencil', sans-serif;
+   margin: 0;
+   width: 16%;
+   position: absolute;
+   left: 1%;
+}
+
+nav{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 100%;
+}
+
+#lista-navegacao{
+   color: #fff;
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   margin: 0;
+   padding-left: 250px;
+   list-style: none;
+   width: 100%;
+}
+
+#lista-login{
+   color: #fff;
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   margin: 0;
+   list-style: none;
+   position: absolute;
+   right: 1%;
+}
+
+#lista-login li{
+   display: flex;
+   padding: 3px;
+   align-items: center;
+   justify-content: center;
+   margin-right: 10px;
+}
+
+#lista-login img{
+   margin-right: 5px;
+}
+
+#lista-login #seta{
+   margin-right: 0;
+}
+
+#lista-navegacao li{
+   display: flex;
+   margin-right: 2%;
+   padding: 5px;
+   align-items: center;
+   justify-content: center;
+}
+
+#lista-navegacao li:hover{
+   border: 1px solid #F29849;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+#lista-navegacao img{
+   margin-right: 5px;
+}
+
+#cards{
+   width: 100%;
+   position: absolute;
+   bottom: 1vh;
+}
+
+.filmes {
+   display: none;
+   width: 100%;
+   height: 47vh;
+   justify-content: space-evenly;
+   align-items: center;
+ }
+
+ .filmeSlide {
+   display: none;
+   width: 100%;
+   height: 60vh;
+   justify-content: space-evenly;
+   align-items: center;
+ }
+
+ #image-title{
+    width: 100%;
+    height: 100%;
+    border-bottom: 2px solid #F29849;
+ }
+
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev {
+  display: flex;
+}
+
+.poster{
+   width: 22%;
+   height: 40vh;
+   margin: 5px;
+   border-radius: 10px;
+}
+
+.poster:hover{
+   cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+
+   .poster{
+      width: 32%;
+   }
+
+   header{
+      height: 12vh;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+      padding: 5px 1%;
+      border-bottom: 2px solid #F29849;
+   }
+   
+   header h1{
+      color: #F29849;
+      font-size: 30px;
+      font-family: 'Allerta Stencil', sans-serif;
+      margin: 0;
+      width: 16%;
+      position: absolute;
+      left: 1%;
+   }
+
+   #lista-login{
+      position: absolute;
+      right: 1%;
+      top: 1.7%;
+   }
+   
+   #lista-navegacao{
+      font-size: 12px;
+      position: relative;
+      top: 6vh;
+      justify-content: center;
+      padding-left: 0;
+   }
+
+   #lista-navegacao li img{
+      width: 16px;
+      height: 16px;
+   }
+
+   #lista-navegacao li{
+      margin-right: 10px;
+      
+   }
+   
+   #lista-login li span{
+      font-size: 14px;      
+   }
+
+   #lista-login li img{
+      width: 18px;
+      height: 18px;    
+   }
+
+}
+
+@media (max-width: 700px) {
+
+   .poster{
+      width: 31%;
+      margin: 5px;
+      border-radius: 10px;
+   }
+
+   header h1{
+      color: #F29849;
+      font-size: 30px;
+      font-family: 'Allerta Stencil', sans-serif;
+      margin: 0;
+   }   
+   
+   #titulo{
+      font-family: 'Calistoga', sans-serif;
+      font-size: 25px;
+   }
+
+}
+
+@media (max-width: 500px) {
+   .poster{
+      width: 48%;
+      margin: 5px;
+      border-radius: 10px;
+   }
+
+   
+}
