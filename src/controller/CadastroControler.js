@@ -1,9 +1,5 @@
 class CadastroController {
 
-   constructor(){
-   
-   }
-
    _salvarUsuario(dados){
       $.ajax({
          url: (`https://api-memorycard.herokuapp.com/cadastroResiliaFlix/`),
@@ -41,20 +37,15 @@ class CadastroController {
         url: `https://api-memorycard.herokuapp.com/cadastroResiliaFlix/${email}`,
         method: "get",
         success: function (response) {
-          try {
-            
+          try {          
             const senha = $("#exampleInputPassword1").val();
             const senhaCadastrada = response.senha 
-            
-            
-  
             if ( senha == senhaCadastrada) {
               window.location = "../pages/home.html"
             } else {
                $("#invalidoSenha").text("Senha inválida, tente novamente.");
             }
           } catch (error) {
-             
             console.log(error);
           }
         },

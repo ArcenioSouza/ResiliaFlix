@@ -1,4 +1,10 @@
 let posterPagInfo;
+let pagInicial = document.querySelector("#pagina-inicial")
+let contatos = document.querySelector("#contatos")
+let filmes = document.querySelector("#informacoesList")
+let buscar = document.querySelector("#buscar")
+let configuracao = document.querySelector("#configuracao")
+let sair = document.querySelector("#sair")
 
 window.addEventListener("load", () => {
       let filmesController = new FilmesController();
@@ -29,6 +35,21 @@ setTimeout(() => {
    );
 }, [2000]);
 
-document
-   .querySelector("#pagina-inicial")
-   .addEventListener("click", () => (location = "../pages/home.html"));
+pagInicial.addEventListener("click", () => (location = "../pages/home.html"));
+contatos.addEventListener("click", () => (location = "../pages/contatos.html"));
+filmes.addEventListener("click", () => (location = "../pages/informacoes.html"));
+buscar.addEventListener("click", () => (location = "../pages/buscar.html"));
+sair.addEventListener("click", () => (location = "../../index.html"));
+configuracao.addEventListener("click", () => {
+   const divConfig = document.querySelector('#itens-config')
+   if(divConfig.style.display == 'none'){
+      divConfig.style.display = 'flex'
+
+      setTimeout(()=>{
+         divConfig.style.display = 'none'
+      }, [3000])
+
+   } else {
+      divConfig.style.display = 'none'
+   }
+});
