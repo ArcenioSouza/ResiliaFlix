@@ -26,8 +26,9 @@ class CadastroController {
             $("#coluna1").css("display","none");
             $("#coluna2").css("display","none");
             $("#coluna3").css("display","none");
+
             setTimeout(()=>{
-               location = '../pages/home.html'
+               location = '../../index.html'
             }, [2000])
          },
          error: function(){
@@ -35,15 +36,33 @@ class CadastroController {
          }
       })
    }
-
-   _verificarUsuario(email){
+   _verificarUsuario(email) {
       $.ajax({
-         url: (`https://api-memorycard.herokuapp.com/cadastroResiliaFlix/${email}`),
-         method: 'get',
-         success: function(response){
+        url: `https://api-memorycard.herokuapp.com/cadastroResiliaFlix/${email}`,
+        method: "get",
+        success: function (response) {
+          try {
             
-            console.log('Usuário existente no banco de dados')
-         }
-      })
-   }
+            const senha = $("#exampleInputPassword1").val();
+            const senhaCadastrada = response.senha 
+            
+            
+  
+            if ( senha == senhaCadastrada) {
+              window.location = "../pages/home.html"
+            } else {
+               $("#invalidoSenha").text("Senha inválida, tente novamente.");
+            }
+          } catch (error) {
+             
+            console.log(error);
+          }
+        },
+        error: function(){
+         $("#invalido").text("Email não cadastrado, tente novamente.")
+         throw new Error('Esse e-mail não está cadastrado em nosso sistema')            
+      }
+      });
+    }
+  
 }
