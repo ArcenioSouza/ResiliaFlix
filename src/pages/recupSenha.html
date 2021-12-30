@@ -18,39 +18,21 @@
    
 </head>
 <body>
-   <header class="tamanho-header"> 
-      <nav  class="navbar navbar-expand-lg cor-nav-bar">
-          <div class=" d-flex justify-content-end">
-            <h1 class="navbar-brand cor-titulo fonte-titulo ms-3 pt-3 fs-2" href="#">ResiliaFlix</h1>
-            <!-- <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarNav"> -->
-              <ul class="navbar-nav">
-                 
-                <li class="nav-item">
-                  
-                   <a class="nav-link link-light fonte-nav-bar ms-3 mt-2 fs-7"  href="#"><img src="../assets/img/home.png"> Página Inicial </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link link-light fonte-nav-bar ms-3 mt-2 fs-7" href="#"> <img src="../assets/img/contato.png">Contatos</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-
-
+   
+  <header>
+    <h1>ResiliaFlix</h1>
+    <nav>
+       <ul id="lista-navegacao">
+          <li id="pagina-inicial"><img src="../assets/img/home1.png">Página Inicial</li>
+          <li><img src="../assets/img/contato1.png">Contatos</li>
+       </ul>
+    </nav>
   </header>
-
-
-
 
 
   <main id="imagem-fundo" class="d-flex justify-content-center"> 
 
-      <form id="formulario" class ="p-5 especificacoes-formulario text-center m-5">
+      <form id="formulario" class ="p-4 especificacoes-formulario text-center m-5">
           <div>
             <label for="exampleInputEmail1" class="form-label fs-4">Redefinir minha Senha:</label>
            
@@ -66,7 +48,7 @@
            
           
           <div class= "d-flex justify-content-center">
-            <button type="submit" class="btn m-3 btn-outline-light" onclick="envioDeEmail()">Enviar</button>
+            <button type="submit" id="btnForm" class="btn m-3 btn-outline-light" onclick="envioDeEmail()">Enviar</button>
             
           </div>
 

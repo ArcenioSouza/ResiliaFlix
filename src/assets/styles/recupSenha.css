@@ -7,50 +7,83 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 83vh;
-    
+    display: flex;
+    align-items: center;
   }
 
-
-.tamanho-header { 
+  header {
+    width: 100%;
     height: 7vh;
-}
-
-.cor-nav-bar { 
-    background-color: #0D0126;
-}
-
-
-.cor-titulo { 
-    color: #F29849;
+    display: flex;
+    align-items: center;
+    padding: 5px 1%;
+    border-bottom: 2px solid #f29849;
+    background-color: #0d0126;
  }
-
-.fonte-titulo { 
-
-font-family: Allerta Stencil;
-font-style: normal;
-font-weight: normal;
-font-size: 60px;
-line-height: 22px;
-
-}
-
-.fonte-nav-bar { 
  
-    font-family: 'Abel', sans-serif;
-
-}
+ header h1 {
+    color: #f29849;
+    font-size: 40px;
+    font-family: "Allerta Stencil", sans-serif;
+    margin: 0;
+    width: 16%;
+    position: absolute;
+    left: 1%;
+ }
+ 
+ nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+ }
+ 
+ #lista-navegacao {
+    color: #fff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+    padding-left: 250px;
+    list-style: none;
+    width: 100%;
+ }
+ 
+ #lista-navegacao li {
+    display: flex;
+    margin-right: 2%;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+ }
+ 
+ #lista-navegacao li:hover {
+    border: 1px solid #f29849;
+    border-radius: 5px;
+    cursor: pointer;
+ }
+ 
+ #lista-navegacao img {
+    margin-right: 5px;
+ }
 
 .especificacoes-formulario { 
     font-family: 'Abel', sans-serif;
     color: white;
-    background-color: #F29849;
-    
+    background-color: #F29849;   
     position: absolute;
     margin: 30px;
     width: 430px;
-    height: 422px;
+    height: 340px;
     border-radius: 5%;
     
+}
+
+#formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
 }
 
 #cor-texto-senha { 
@@ -60,7 +93,12 @@ line-height: 22px;
 
 .cor-botao { 
     background-color: #F29849;
+}
 
+#btnForm:hover{
+    background-color:#0d0126 ;
+    border: 2px solid #ffffff;
+    color: #F29849;
 }
 
 .cor-roda-pe { 
@@ -70,40 +108,64 @@ line-height: 22px;
 .footer { 
     height: 10vh;
 }
-
-
-@media (max-width: 700px) { 
-
+ 
+ @media (max-width: 500px) {
     #formulario {
-        height: 70vh;
-        width: 40vh;
-        
-        
+       height: 50vh;
+       width: 40vh;
     }
-    .tamanho-header { 
-        margin-bottom: 5vh;
-        
+ 
+    header {
+       height: 12vh;
+       display: flex;
+       justify-content: flex-start;
+       align-items: flex-start;
+       flex-direction: column;
+       padding: 5px 1%;
+       border-bottom: 2px solid #f29849;
     }
-
-}
-
-@media (max-width:375px ) { 
-
-    #formulario {
-        
-        height: 80vh;
-        width: 40vh;
-      
-    
-
-}
-
-
-#imagem-fundo { 
-
-    height: 100vh;
-
-}
-}
+ 
+    header h1 {
+       color: #f29849;
+       font-size: 30px;
+       font-family: "Allerta Stencil", sans-serif;
+       margin: 0;
+       width: 16%;
+       position: absolute;
+       left: 1%;
+    }
+ 
+    #lista-login {
+       position: absolute;
+       right: 1%;
+       top: 1.7%;
+    }
+ 
+    #lista-navegacao {
+       font-size: 12px;
+       position: relative;
+       top: 6vh;
+       justify-content: center;
+       padding-left: 0;
+    }
+ 
+    #lista-navegacao li img {
+       width: 16px;
+       height: 16px;
+    }
+ 
+    #lista-navegacao li {
+       margin-right: 10px;
+    }
+ 
+    #lista-login li span {
+       font-size: 14px;
+    }
+ 
+    #lista-login li img {
+       width: 18px;
+       height: 18px;
+    }
+ }
     
     
