@@ -75,36 +75,42 @@ nav {
 }
 
 #container {
+  height: 84vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   background-image: url('../img/backgroundPagCadastro.png');
   background-size: cover;
-  padding: 3% 0;
 }
-
 
 p {
   width: 90%;
-  height: 100px;
+  height: 70px;
   font-family: Calistoga;
   font-style: normal;
   font-weight: normal;
   font-size: 50px;
   color: white;
-  margin-top: 30px;
+  margin-bottom: 20px;
 }
 
 #formulário{
   background-color:rgba(15, 15, 15, 0.54);
   border-radius: 20px;
-  width: 780px;
-  height: 500px;
+  width: 65%;
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  padding: 20px;
- 
+  padding: 30px;
+  justify-content: space-between;
+}
+
+#cidadeEstado{
+  display: flex;
+  justify-content: space-between;
+}
+
+#cidadeEstado .form-group{
+  width: 45%;
 }
 
 label{
@@ -112,105 +118,38 @@ label{
   color: white;
   font-size: 20px;
   margin-top: 5px;
-
 }
 
-#nomeInput {
-  width: 186.23px;
+.form-group input{
+  width: 100%;
   height: 26.08px;
   margin-top: 8px;
-
 }
 
-#emailInput {
-  width: 186.23px;
-  height: 26.08px;
-  margin-top: 8px;
-
+#numeroInput{
+  width: 40%;
 }
 
-#senhaInput {
-  width: 186.23px;
-  height: 26.08px;
-  margin-top: 8px;
-
+#coluna1{
+  width: 50%;
+  margin-right: 5%;
 }
 
-#confirmaSInput {
-  width: 186.23px;
-  height: 26.08px;
-  margin-top: 8px;
-
-}
-
-#cepInput {
-  width: 186.23px;
-  height: 26.08px;
-  margin-top: 8px;
-
-}
-
-#ruaInput {
-  width: 186.23px;
-  height: 26.08px;
-  margin-top: 8px;
-
-}
-
-#bairroInput {
-  width: 186.23px;
-  height: 26.08px;
-  margin-top: 8px;
-
-}
-
-#complementoInput {
-  width: 186.23px;
-  height: 26.08px;
-  margin-top: 8px;
-
-}
-
-#cidadeInput {
-  width: 186.23px;
-  height: 26.08px;
-  margin-top: 8px;
-
-}
-
-#numeroInput {
-  width: 93.11px;
-  height: 26.08px;
-  margin-top: 8px;
-  flex-wrap: wrap;
-  display: flex;
-
-}
-
-
-#estadoInput {
-  width: 93.11px;
-  height: 26.08px;
-  margin-top: 8px;
-
+#coluna2{
+  width: 50%;
 }
 
 .formGroupMargin {
   margin-bottom: 85px;
- 
-  
 }
 
 .formGroupMargin1 {
-  margin-top: 13px;
- 
-  
+  margin-top: 13px; 
 }
 
 footer {
-  height: 10vh;
   border-top: 2px solid #f29849;
-
+  height: 7vh;
 }
 
 #btnCadastrar {
@@ -220,8 +159,8 @@ footer {
   background: #F29849;
   border: 2px solid #FFFFFF;
   border-radius: 30px;
-  margin-top: 50px;
-  margin-left: 85px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 
 }
 
@@ -229,29 +168,6 @@ footer {
   background-color:#0d01268e ;
   border: 2px solid #F29849;
   color: #F29849;
-
-}
-
-#coluna1 {
-  width: 230px;
-  height: 420px;
-  margin-left: 30px;
-}
-
-#coluna2 {
-  width: 230px;
-  height: 420px;
-  margin-left: 50px;
-  
-}
-
-#coluna3 {
-  width: 230px;
-  height: 420px;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  margin-left: 50px;
 
 }
 
@@ -277,38 +193,140 @@ footer {
 }
 
 #erroEmail{
-
   font-family: 'Abel', sans-serif;
   color: red;
   position:relative;
   height: 0px;
   left: 8px;
-  
 }
 
 #erroSenha{
-
   font-family: 'Abel', sans-serif;
   color: red;
   position:relative;
   height: 0px;
   left: 8px;
-
 }
 
 #erroSenha1{
-
   font-family: 'Abel', sans-serif;
   color: red;
   position:relative;
   height: 0px;
   left: 8px;
-
 }
 
 .form-group {
-
+  width: 100%;
   margin-top: 15px;
-
 }
 
+.formNome{
+  margin-top: 0;
+}
+
+.formRua{
+  margin-top: 0;
+}
+
+@media (max-width: 1000px) {
+  p {
+    font-size: 40px;
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 700px) {
+  p {
+    font-size: 30px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+  }
+
+  #btnCadastrar {
+    margin-bottom: 30px;
+  }
+
+  #container {
+    height: auto;
+  }
+
+  #formulário{
+    width: 85%;
+    flex-direction: column;
+  }
+
+  #coluna1{
+    width: 100%;
+    margin-right: 0%;
+  }
+  
+  #coluna2{
+    width: 100%;
+  }
+  
+}
+
+@media (max-width: 600px) {
+
+  p {
+    font-size: 25px;
+    
+  }
+
+  header {
+     height: 12vh;
+     display: flex;
+     justify-content: flex-start;
+     align-items: flex-start;
+     flex-direction: column;
+     padding: 5px 1%;
+     border-bottom: 2px solid #f29849;
+  }
+
+  header h1 {
+     color: #f29849;
+     font-size: 30px;
+     font-family: "Allerta Stencil", sans-serif;
+     margin: 0;
+     width: 16%;
+     position: absolute;
+     left: 1%;
+  }
+
+  #lista-login {
+     position: absolute;
+     right: 1%;
+     top: 1.7%;
+  }
+
+  #lista-navegacao {
+     font-size: 12px;
+     position: relative;
+     top: 6vh;
+     justify-content: center;
+     padding-left: 0;
+  }
+
+  #lista-navegacao li img {
+     width: 16px;
+     height: 16px;
+  }
+
+  #lista-navegacao li {
+     margin-right: 10px;
+  }
+
+  #lista-login li span {
+     font-size: 14px;
+  }
+
+  #lista-login li img {
+     width: 18px;
+     height: 18px;
+  }
+}

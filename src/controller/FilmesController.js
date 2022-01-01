@@ -20,6 +20,7 @@ class FilmesController {
    }
 
    _criaListaDeFilmes(bancoDeDados) {
+
       this._listaId.forEach((element) => {
          $.ajax({
             type: "GET",
@@ -37,20 +38,26 @@ class FilmesController {
                );
                bancoDeDados.push(filme);
             },
-         });
-      });
-
+            error: function (erro) {
+               console.log(erro)
+            }
+         })
+      })
+      
       setTimeout(()=>{
-         this.carousel._updateTemplate(bancoDeDados)
-      },[1000])
-     
+         try{
+            this.carousel._updateTemplate(bancoDeDados)
+         } catch(error){
+            throw new Error(error)
+         }
+      },[500])
    }
 
    _buscarInformacoes(id) {
       $.ajax({
          type: "GET",
          url: `https://www.omdbapi.com/?i=${id}&apikey=4adad40c`,  
-      }).done(function (response) {
+         success: function (response) {
             let infoFilme = new Filmes(
                response.imdbID,
                response.Title,
@@ -62,6 +69,10 @@ class FilmesController {
                response.Genre
             );
             localStorage.setItem("infoFilme", JSON.stringify(infoFilme));
-         })
+         },
+         error: function (erro) {
+            console.log(erro)
+         }
+      })
    }
 }
