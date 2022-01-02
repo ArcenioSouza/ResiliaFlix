@@ -35,7 +35,6 @@ inputBusca.addEventListener("keyup", () => {
       success: function (response) {
          try {
             const result = response.Search;
-            console.log(result)
             let divBusca = $(`<div class="imagens-busca"></div>`);
                result.forEach((element) => {
                   if(element.Poster != "N/A"){
