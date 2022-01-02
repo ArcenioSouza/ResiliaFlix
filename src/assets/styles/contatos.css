@@ -74,241 +74,234 @@ nav {
   margin-right: 5px;
 }
 
-#container {
+main{
+  width: 100%;
+  height: 86vh;
+  border-bottom: 2px solid #f29849;
+  background-image: url('../img/backgroundHome.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+main img{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+main p{
+  color: #fff;
+  font-size: 25px;
+}
+
+.container{
+  width: 230px;
+  height: 350px;
+  background-color: rgba(0, 0, 0, 0.658);
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url('../img/backgroundPagCadastro.png');
-  background-size: cover;
-  padding: 3% 0;
-}
-
-
-p {
-  width: 90%;
-  height: 100px;
+  justify-content: center;
+  border-radius: 25px;
+  border: 2px solid #fff;
   font-family: Calistoga;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 50px;
-  color: white;
-  margin-top: 30px;
 }
 
-#formulário{
-  background-color:rgba(15, 15, 15, 0.54);
-  border-radius: 20px;
-  width: 780px;
-  height: 500px;
+.container:hover{
+  border: 2px solid #f29849;
+}
+
+.logos{
+  width: 80%;
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  padding: 20px;
- 
+  justify-content: space-evenly;
 }
 
-label{
-  font-family: 'Abel', sans-serif;
-  color: white;
-  font-size: 20px;
-  margin-top: 5px;
-
+.logos img{
+  width: 40px;
+  height: 40px;
+  border-radius: 0;
 }
 
-#nomeInput {
-  width: 186.23px;
-  height: 26.08px;
-  margin-top: 8px;
-
-}
-
-#emailInput {
-  width: 186.23px;
-  height: 26.08px;
-  margin-top: 8px;
-
-}
-
-#senhaInput {
-  width: 186.23px;
-  height: 26.08px;
-  margin-top: 8px;
-
-}
-
-#confirmaSInput {
-  width: 186.23px;
-  height: 26.08px;
-  margin-top: 8px;
-
-}
-
-#cepInput {
-  width: 186.23px;
-  height: 26.08px;
-  margin-top: 8px;
-
-}
-
-#ruaInput {
-  width: 186.23px;
-  height: 26.08px;
-  margin-top: 8px;
-
-}
-
-#bairroInput {
-  width: 186.23px;
-  height: 26.08px;
-  margin-top: 8px;
-
-}
-
-#complementoInput {
-  width: 186.23px;
-  height: 26.08px;
-  margin-top: 8px;
-
-}
-
-#cidadeInput {
-  width: 186.23px;
-  height: 26.08px;
-  margin-top: 8px;
-
-}
-
-#numeroInput {
-  width: 93.11px;
-  height: 26.08px;
-  margin-top: 8px;
-  flex-wrap: wrap;
-  display: flex;
-
-}
-
-
-#estadoInput {
-  width: 93.11px;
-  height: 26.08px;
-  margin-top: 8px;
-
-}
-
-.formGroupMargin {
-  margin-bottom: 85px;
- 
-  
-}
-
-.formGroupMargin1 {
-  margin-top: 13px;
- 
-  
+.logos img:hover{
+  cursor: pointer;
 }
 
 footer {
-  height: 10vh;
+  height: 7vh;
   border-top: 2px solid #f29849;
-
 }
 
-#btnCadastrar {
-  width: 270px;
-  height: 35px;
-  color: white;
-  background: #F29849;
-  border: 2px solid #FFFFFF;
-  border-radius: 30px;
-  margin-top: 50px;
-  margin-left: 85px;
-
-}
-
-#btnCadastrar:hover{
-  background-color:#0d01268e ;
-  border: 2px solid #F29849;
-  color: #F29849;
-
-}
-
-#coluna1 {
-  width: 230px;
-  height: 420px;
-  margin-left: 30px;
-}
-
-#coluna2 {
-  width: 230px;
-  height: 420px;
-  margin-left: 50px;
+@media (max-width: 1300px){
+  main{
+    width: 100%;
+    height: 86vh;
+    border-bottom: 2px solid #f29849;
+    background-image: url('../img/backgroundHome.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    flex-wrap: wrap;
+  }
   
-}
-
-#coluna3 {
-  width: 230px;
-  height: 420px;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  margin-left: 50px;
-
-}
-
-#cadastroSucesso {
-  display: none;
-  width: 780px;
-  height: 420px;
-  font-family: Calistoga;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 50px;
-  color: white;
-  text-align: center;
-  margin-top: 85px;
+  main img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    margin: 0;
+    margin-right: 25px;
+  }
   
-}
-
-#erroCep {
-  font-family: 'Abel', sans-serif;
-  color: red;
-  position:relative;
-  left: 8px;
-}
-
-#erroEmail{
-
-  font-family: 'Abel', sans-serif;
-  color: red;
-  position:relative;
-  height: 0px;
-  left: 8px;
+  main p{
+    color: #fff;
+    font-size: 25px;
+    margin: 0;
+  }
   
+  .container{
+    width: 80%;
+    height: 110px;
+    background-color: rgba(0, 0, 0, 0.658);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 25px;
+    border: 2px solid #fff;
+    font-family: Calistoga;
+    position: relative;
+    padding-left: 5%;
+  }
+  
+  .container:hover{
+    border: 2px solid #f29849;
+  }
+  
+  .logos{
+    position: absolute;
+    right: 0;
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .logos img{
+    width: 40px;
+    height: 40px;
+    border-radius: 0;
+  }
+  
+  .logos img:hover{
+    cursor: pointer;
+  }
 }
 
-#erroSenha{
+@media (max-width: 600px) {
 
-  font-family: 'Abel', sans-serif;
-  color: red;
-  position:relative;
-  height: 0px;
-  left: 8px;
+  header {
+     height: 12vh;
+     display: flex;
+     justify-content: flex-start;
+     align-items: flex-start;
+     flex-direction: column;
+     padding: 5px 1%;
+     border-bottom: 2px solid #f29849;
+  }
 
+  header h1 {
+     color: #f29849;
+     font-size: 30px;
+     font-family: "Allerta Stencil", sans-serif;
+     margin: 0;
+     width: 16%;
+     position: absolute;
+     left: 1%;
+  }
+
+  #lista-login {
+     position: absolute;
+     right: 1%;
+     top: 1.7%;
+  }
+
+  #lista-navegacao {
+     font-size: 12px;
+     position: relative;
+     top: 6vh;
+     justify-content: center;
+     padding-left: 0;
+  }
+
+  #lista-navegacao li img {
+     width: 16px;
+     height: 16px;
+  }
+
+  #lista-navegacao li {
+     margin-right: 10px;
+  }
+
+  #lista-login li span {
+     font-size: 14px;
+  }
+
+  #lista-login li img {
+     width: 18px;
+     height: 18px;
+  }
+
+  .container{
+    width: 95%;
+  }
 }
 
-#erroSenha1{
-
-  font-family: 'Abel', sans-serif;
-  color: red;
-  position:relative;
-  height: 0px;
-  left: 8px;
-
+@media (max-width: 500px) {
+  main img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    margin: 0;
+    margin-right: 10px;
+  }
+  
+  main p{
+    color: #fff;
+    font-size: 20px;
+    margin: 0;
+  }
+  
+  .container{
+    width: 95%;
+    height: 90px;
+    background-color: rgba(0, 0, 0, 0.658);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 25px;
+    border: 2px solid #fff;
+    font-family: Calistoga;
+    padding-left: 2%;
+  }
+  
+  .logos{
+    width: 25%;
+    display: flex;
+    justify-content: space-evenly;
+    padding-right: 2%;
+  }
 }
-
-.form-group {
-
-  margin-top: 15px;
-
-}
-

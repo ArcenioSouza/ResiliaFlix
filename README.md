@@ -75,6 +75,13 @@ Esse projeto consiste em um site baseado no modelo de sites de streaming como Ne
         <a href="https://github.com/CibeleMartins"><img width="50" height="50" src="https://img.icons8.com/fluency-systems-filled/48/000000/github.png"/></a>
       </h2>  
    </div>
+
+   <div align="center">
+      <h2>Eliane Barros <br> 
+        <a href="https://www.linkedin.com/in/eliane-barros-445b17113/"><img width="50" height="50" src="https://img.icons8.com/color/48/000000/linkedin.png"/></a>
+        <a href="https://github.com/elianebdias"><img width="50" height="50" src="https://img.icons8.com/fluency-systems-filled/48/000000/github.png"/></a>
+      </h2>  
+   </div>
    
    
 
