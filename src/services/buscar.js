@@ -46,8 +46,41 @@ inputBusca.addEventListener("keyup", () => {
             
             $("#resultadoBusca").html(divBusca);
          } catch {
+            let divBusca = $(`<div class="semResultado"></div>`);
+            let divResultado = $(`<h1>Nenhum resultado encontrado</h1>`)
+            divBusca.append(divResultado)
+            $("#resultadoBusca").html(divBusca);
             throw new Error('Input em branco')       
          }
       },
    });
+
+   setTimeout(() => {
+      let posterPagBusca = document.querySelectorAll(".posterBusca");
+      Array.from(posterPagBusca).forEach((e) =>
+         e.addEventListener("click", (e) => {
+            e.preventDefault();
+            let href = window.location.href;
+            const idFilme = e.target.id;
+            console.log(idFilme)
+            let filmesController = new FilmesController();
+            filmesController._buscarInformacoes(idFilme);
+   
+            setTimeout(() => {
+               if (href.indexOf("informacoes") > 0) {
+               } else if (href.indexOf("home") > 0) {
+                  location = "./informacoes.html";
+               } else {
+                  location = "./informacoes.html";
+               }
+            }, [1000]);
+         })
+      );
+   }, [1000]);
+
+   
 });
+
+
+
+
