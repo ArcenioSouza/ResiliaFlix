@@ -16,7 +16,6 @@ window.addEventListener("load", () => {
       );
       let infoFilme = new Informacoes(elementHTMLInfoFilme);
       infoFilme._updateTemplate(filme);
-
 });
 
 setTimeout(() => {
@@ -27,6 +26,7 @@ setTimeout(() => {
          const idFilme = e.target.id;
          let filmesController = new FilmesController();
          filmesController._buscarInformacoes(idFilme);
+         
          setTimeout(() => {
             location = "../pages/informacoes.html";
          }, [500])

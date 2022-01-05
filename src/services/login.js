@@ -32,7 +32,6 @@ entrarSite.addEventListener('click', function () {
  
  controler._verificarUsuario(InputEmail)
 
-
 })
 
 const buttonPagInicial = document.querySelector("#pagina-inicial");

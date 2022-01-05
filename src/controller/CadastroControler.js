@@ -32,6 +32,7 @@ class CadastroController {
          }
       })
    }
+   
    _verificarUsuario(email) {
       $.ajax({
         url: `https://api-memorycard.herokuapp.com/cadastroResiliaFlix/${email}`,
