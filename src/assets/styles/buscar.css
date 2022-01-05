@@ -186,6 +186,21 @@ main{
    cursor: pointer;
  }
 
+ @media (max-height: 700px) {
+   main{
+     height: auto;
+   }
+ 
+   header {
+     height: 10vh;
+   }
+
+   #resultadoBusca{
+      height: 52vh;
+      margin: 20px;
+   }
+ }
+
 @media (max-width: 1000px) {
 
    #container-input{
