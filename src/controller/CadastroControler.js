@@ -23,9 +23,9 @@ class CadastroController {
             $("#coluna2").css("display","none");
             $("#coluna3").css("display","none");
 
-            setTimeout(()=>{
+            /* setTimeout(()=>{
                location = '../../index.html'
-            }, [2000])
+            }, [2000]) */
          },
          error: function(){
             throw new Error('Esse e-mail já está cadastrado em nosso sistema')            
